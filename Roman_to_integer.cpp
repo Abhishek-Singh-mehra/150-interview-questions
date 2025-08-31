@@ -43,4 +43,32 @@ public:
         }
         return total;
     }
+}; 
+ /* approach 2 
+  slitely change  in the  approach just doing the thing question says .*/
+   /* time complexity 0(n);
+    space complexity 0(1).*/
+  class Solution {
+public:
+    int romanToInt(string s) {
+        unordered_map<char , int>mp = {{'I' ,1} ,{'V',5},{'X',10},{'L',50},{'C',100},{'D',500} ,{'M',1000}}; 
+         int total =0; 
+
+        for(int i=0  ; i<s.size() ; )
+        {
+              if( i+1<s.size() && mp[s[i]]<mp[s[i+1]])
+              { 
+                 int num = mp[s[i+1]] - mp[s[i]];
+                 total = total + num; 
+                  i = i+2;
+              } 
+              else 
+              {
+                 total += mp[s[i]]; 
+                  i+=1;
+              }
+        } 
+        return total ;
+        
+    }
 };
