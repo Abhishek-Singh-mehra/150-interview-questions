@@ -8,7 +8,8 @@ The returned string should only have a single space separating the words. Do not
   the intution is that first reverse the  the whole strig
    then  iterate in the  string find the space " " then  before the space ,reverse the string 
      do same  with  the rest  of the string.  */
-      
+      /* time complexity 0(n).
+       space complexity  0(1).*/
      class Solution {
 public:
     string reverseWords(string s) {
