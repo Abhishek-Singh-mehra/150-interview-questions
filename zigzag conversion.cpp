@@ -18,7 +18,9 @@ string convert(string s, int numRows);*/
        the intution  is simpl first   get to the   bottomsouth part then
        the upper north part  with the formula  check the  edge case too.*/ 
         /* time complexity 0(1) ,bcoz of the const size of row.
-            space complexity 0(1).*/
+            space complexity 0(1).*/ 
+             /* leetcode link = https://leetcode.com/problems/zigzag-conversion/?envType=study-plan-v2&envId=top-interview-150
+              video refrence = https://www.youtube.com/watch?v=k8F7nzySY60*/
 class Solution
 {
 public:
